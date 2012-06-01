@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:orientation="horizontal"
+  android:id="@+id/mainView">
+    <RelativeLayout android:layout_width="match_parent" 
+    	android:layout_height="match_parent" 
+    	android:background="@drawable/background" 
+    	android:id="@+id/relativeLayout1">
+    	
+        <TextView
+            android:id="@+id/player1"  
+        	android:text="@string/empty"
+        	android:gravity="center" 
+        	android:layout_height="120dp" 
+        	android:layout_width="25dp" 
+        	android:layout_marginTop="80dp" 
+        	android:layout_alignParentLeft="true" 
+        	android:layout_marginLeft="30dp" 
+        	android:background="@drawable/dockleft">
+        </TextView>
+        
+        <TextView 
+        	android:id="@+id/player2"
+        	android:layout_centerInParent="true" 
+        	android:text="@string/empty" 
+        	android:gravity="center"
+        	android:layout_height="25dp" 
+        	android:layout_alignParentTop="true" 
+        	android:layout_width="120dp" 
+        	android:background="@drawable/docktop" 
+        	android:layout_marginTop="30dp">
+        </TextView>
+                
+        <TextView 
+        	android:id="@+id/player3"
+        	android:text="@string/empty" 
+        	android:layout_height="120dp" 
+        	android:gravity="center"
+        	android:layout_alignParentRight="true" 
+        	android:layout_width="25dp" 
+        	android:background="@drawable/dockright" 
+        	android:layout_marginTop="80dp" 
+        	android:layout_marginRight="30dp">
+        </TextView>
+           
+        <TextView 
+        	android:id="@+id/player4" 
+        	android:layout_centerInParent="true" 
+        	android:layout_height="25dp" 
+        	android:gravity="center"
+        	android:layout_alignParentBottom="true" 
+        	android:layout_width="120dp" 
+        	android:background="@drawable/dockbottom" 
+        	android:layout_marginBottom="20dp" 
+        	android:text="@string/empty">
+        </TextView>
+        
+        <TextView 
+            android:id="@+id/Player1Tile1"
+        	android:layout_toRightOf="@+id/player1" 
+        	android:layout_alignTop="@+id/player1" 
+        	android:gravity="center"
+           	android:background="@drawable/card2" 
+        	android:text="@string/empty" 
+        	android:layout_width="40dp" 
+        	android:textSize="30dp" 
+        	android:typeface="monospace" 
+        	android:textStyle="normal"
+        	android:layout_height="39dp" 
+        	android:textColor="@color/red">
+        </TextView>
+       
+        <TextView 
+        	android:id="@+id/Player1Tile2"
+        	android:layout_toRightOf="@+id/player1" 
+        	android:layout_alignTop="@+id/player1" 
+        	android:gravity="center"
+        	android:layout_alignBottom="@+id/player1" 
+        	android:background="@drawable/card2" 
+        	android:text="@string/empty" 
+        	android:layout_width="40dp" 
+        	android:layout_height="25dp"
+        	android:textSize="30dp" 
+        	android:typeface="monospace" 
+        	android:textStyle="normal" 
+        	android:layout_marginBottom="42dp" 
+        	android:layout_marginTop="42dp">
+        </TextView>
+           
+        <TextView 
+        	android:id="@+id/Player1Tile3"
+        	android:layout_toRightOf="@+id/player1" 
+        	android:layout_alignBottom="@+id/player1"
+        	android:gravity="center" 
+        	android:background="@drawable/card2" 
+        	android:text="@string/empty" 
+        	android:textSize="30dp" 
+        	android:typeface="monospace" 
+        	android:textStyle="normal"
+        	android:layout_width="40dp" 
+        	android:layout_height="39dp">
+        </TextView>
+        
+        <TextView 
+        	android:id="@+id/Player2Tile1"
+            android:layout_alignLeft="@+id/player2" 
+        	android:layout_width="38dp" 
+        	android:gravity="center"
+        	android:background="@drawable/card2" 
+        	android:layout_below="@+id/player2" 
+        	android:textSize="30dp" 
+        	android:typeface="monospace" 
+        	android:textStyle="normal"
+        	android:layout_height="40dp" 
+        	android:text="@string/empty">
+        </TextView>
+              
+        <TextView 
+        	android:id="@+id/Player2Tile2"
+            android:layout_alignLeft="@+id/player2" 
+        	android:layout_width="25dp" 
+        	android:gravity="center"
+        	android:layout_alignRight="@+id/player2" 
+        	android:background="@drawable/card2" 
+        	android:layout_below="@+id/player2" 
+        	android:layout_marginRight="41dp" 
+        	android:layout_marginLeft="41dp"
+        	android:textSize="30dp" 
+        	android:typeface="monospace" 
+        	android:textStyle="normal" 
+        	android:layout_height="40dp" 
+        	android:text="@string/empty">
+        </TextView>
+       
+        <TextView 
+        	android:id="@+id/Player2Tile3"
+        	android:layout_width="38dp" 
+        	android:gravity="center"
+        	android:layout_alignRight="@+id/player2" 
+        	android:background="@drawable/card2" 
+        	android:layout_below="@+id/player2" 
+        	android:layout_height="40dp" 
+        	android:textSize="30dp" 
+        	android:typeface="monospace" 
+        	android:textStyle="normal"
+        	android:text="@string/empty">
+        </TextView>
+  
+        <TextView 
+       		android:id="@+id/Player3Tile1"
+       		android:gravity="center"
+        	android:layout_toLeftOf="@+id/player3" 
+        	android:layout_alignTop="@+id/player3" 
+        	android:background="@drawable/card2" 
+        	android:layout_height="38dp" 
+        	android:textSize="30dp" 
+        	android:typeface="monospace" 
+        	android:textStyle="normal"
+        	android:text="@string/empty" 
+        	android:layout_width="40dp">
+        </TextView>
+     
+        <TextView 
+        	android:id="@+id/Player3Tile2"
+        	android:gravity="center"
+        	android:layout_toLeftOf="@+id/player3" 
+        	android:layout_alignBottom="@+id/player3" 
+        	android:background="@drawable/card2" 
+        	android:text="@string/empty" 
+        	android:layout_width="40dp"
+        	android:textColor="@color/black" 
+        	android:textSize="30dp" 
+        	android:typeface="monospace" 
+        	android:textStyle="normal"
+        	android:layout_marginBottom="41dp" 
+        	android:layout_marginTop="7dp" 
+        	android:layout_height="37dp">
+        </TextView>
+     
+        <TextView 
+        	android:id="@+id/Player3Tile3"
+        	android:gravity="center"
+        	android:layout_toLeftOf="@+id/player3" 
+        	android:layout_alignBottom="@+id/player3" 
+        	android:background="@drawable/card2" 
+        	android:text="@string/empty" 
+        	android:textColor="@color/black" 
+        	android:textSize="30dp" 
+        	android:typeface="monospace" 
+        	android:textStyle="normal"
+        	android:layout_width="40dp" 
+        	android:layout_height="38dp">
+        </TextView>
+         
+        <TextView 
+        	android:id="@+id/MyTile1"
+        	android:gravity="center"
+        	android:layout_height="40dp" 
+        	android:layout_above="@+id/player4" 
+        	android:layout_alignLeft="@+id/player4" 
+        	android:background="@drawable/mycard" 
+        	android:layout_width="38dp" 
+        	android:text="@string/unknown" 
+        	android:textColor="@color/black" 
+        	android:textSize="30dp"
+        	android:typeface="monospace" 
+        	android:textStyle="normal">
+        </TextView>
+        
+        <TextView
+        	android:id="@+id/MyTile2"
+        	android:layout_height="40dp" 
+        	android:layout_above="@+id/player4" 
+        	android:layout_alignLeft="@+id/player4" 
+        	android:layout_alignRight="@+id/player4" 
+        	android:layout_width="30dp" 
+        	android:background="@drawable/mycard" 
+        	android:layout_marginLeft="41dp" 
+        	android:layout_marginRight="41dp" 
+        	android:text="@string/unknown" 
+        	android:textColor="@color/black" 
+        	android:textSize="30dp" 
+        	android:typeface="monospace" 
+        	android:textStyle="normal"
+        	android:gravity="center">
+        </TextView>
+      
+        <TextView 
+        	android:id="@+id/MyTile3"
+        	android:layout_height="40dp" 
+        	android:layout_above="@+id/player4" 
+        	android:layout_alignRight="@+id/player4" 
+        	android:layout_width="38dp" 
+        	android:background="@drawable/mycard" 
+        	android:text="@string/unknown" 
+        	android:typeface="monospace" 
+        	android:textSize="30dp" 
+        	android:textColor="@color/black" 
+        	android:textStyle="normal"
+        	android:gravity="center">
+        </TextView>
+        
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/Player1Tile1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="1dp"
+            android:gravity="center"
+            android:text="@string/empty"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:typeface="monospace" >
+
+        </TextView>
+        
+        <TextView 
+        	android:id="@+id/answer"
+        	android:text="@string/empty" 
+        	android:textSize="16dp" 
+        	android:layout_below="@+id/question" 
+        	android:layout_alignLeft="@+id/question" 
+        	android:layout_alignRight="@+id/question" 
+        	android:layout_width="200dp" 
+        	android:layout_height="20dp" 
+        	android:layout_marginBottom="30dp"  
+        	android:textColor="@color/black" 
+        	android:gravity="center_horizontal">
+        </TextView>
+        
+        
+        <Button 
+        	android:layout_alignParentRight="true" 
+        	android:layout_alignParentBottom="true" 
+        	android:layout_height="50dp" 
+        	android:layout_width="75dp" 
+        	android:text="@string/start" 
+        	android:id="@+id/start">
+        </Button>
+        
+        <Button 
+        	android:layout_alignParentBottom="true" 
+        	android:layout_height="50dp" 
+        	android:layout_width="75dp" 
+        	android:numeric="integer" 
+        	android:text="@string/guess" 
+        	android:id="@+id/guess">
+        </Button>
+        
+        <Button 
+        	android:layout_alignParentRight="true" 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/questions" 
+        	android:text="@string/questions" 
+        	android:layout_width="95dp">
+        </Button>
+         
+       
+    </RelativeLayout>
+    
+</LinearLayout>
